@@ -1,5 +1,2 @@
-# Hello World Streamlit Backlog
-
-1. [1] Project scaffolding and local app bootstrap — initialize the Python + Streamlit project structure, dependency manifest, app entry point, and startup/health verification for the single-user demo. <!-- depends: none -->
-2. [ ] Hello World interaction and usability polish — implement the Streamlit button-triggered greeting flow, surface clear runtime feedback, and confirm the app meets the defined acceptance criteria. <!-- depends: 1 -->
-3. [ ] Matrix-style background enhancement — add a button-triggered matrix-like background effect after the greeting is shown, preserve readability, and confirm the visual enhancement works in the local Streamlit app. <!-- depends: 2 -->
+1. [ ] Project scaffolding and local runtime setup — initialize the Python/Streamlit project structure, install the app and test dependencies, create the entry point and a startup health/smoke check, and keep the local run workflow predictable for a clean environment <!-- depends: none -->
+2. [ ] Hello World interaction UI — build the Streamlit page with a visible button and click handler that renders Hello World, surfacing concise runtime errors and keeping the one-screen demo deterministic and easy to extend <!-- depends: 1 -->
