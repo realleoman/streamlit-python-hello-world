@@ -24,3 +24,12 @@ build/
 .vscode/
 .idea/
 .DS_Store
+
+# Playwright / validation artifacts
+/e2e/node_modules/
+/e2e/package-lock.json
+/validation-results.txt
+
+# Playwright / validation artifacts
+/e2e/test-results/
+/e2e/playwright-report/

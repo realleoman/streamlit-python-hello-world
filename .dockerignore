@@ -1,0 +1,32 @@
+# VCS and local tooling
+.git
+.github
+.gitignore
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node artifacts
+node_modules/
+e2e/node_modules/
+
+# Build output
+build/
+dist/
+.coverage
+coverage.xml
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
