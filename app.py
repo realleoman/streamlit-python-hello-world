@@ -9,3 +9,6 @@ st.title("Hello World")
 
 if st.button("Click me"):
     st.session_state.show_hello = True
+
+if st.session_state.show_hello:
+    st.success("Hello World")
