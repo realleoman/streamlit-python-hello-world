@@ -8,7 +8,10 @@ if "show_hello" not in st.session_state:
 st.title("Hello World")
 
 if st.button("Click me"):
-    st.session_state.show_hello = True
+    try:
+        st.session_state.show_hello = True
+    except Exception as exc:
+        st.error(f"Unable to show the greeting: {exc}")
 
 if st.session_state.show_hello:
     st.success("Hello World")
