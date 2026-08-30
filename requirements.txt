@@ -1,2 +1,2 @@
 # Minimal installation for the local Streamlit hello-world demo.
-streamlit==1.40.0
+streamlit==1.12.0
