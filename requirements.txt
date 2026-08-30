@@ -1,3 +1,4 @@
 # Minimal installation for the local Streamlit hello-world demo.
-streamlit==1.12.0
+streamlit>=1.12.0,<2; python_version < "3.10"
+streamlit>=1.30.0,<2; python_version >= "3.10"
 altair==4.2.2

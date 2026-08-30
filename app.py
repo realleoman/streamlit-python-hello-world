@@ -1,3 +1,5 @@
+from contextlib import nullcontext
+
 import streamlit as st
 
 st.set_page_config(page_title="Hello World", page_icon="👋", layout="centered")
@@ -23,7 +25,8 @@ st.markdown(
             padding-bottom: 2rem;
         }
 
-        .hello-card {
+        .hello-card,
+        div[data-testid="stVerticalBlock"] {
             background: rgba(3, 17, 13, 0.72);
             border: 1px solid rgba(124, 255, 196, 0.35);
             border-radius: 16px;
@@ -35,10 +38,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<div class="hello-card">', unsafe_allow_html=True)
-st.title("Hello World")
+content_container = st.container() if hasattr(st, "container") else nullcontext()
 
-if st.button("Click me"):
-    st.success("Hello World")
+with content_container:
+    st.title("Hello World")
 
-st.markdown("</div>", unsafe_allow_html=True)
+    if st.button("Click me"):
+        st.success("Hello World")
