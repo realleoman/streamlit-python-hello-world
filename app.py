@@ -38,9 +38,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-content_container = st.container() if hasattr(st, "container") else nullcontext()
+card_container = st.container() if hasattr(st, "container") else nullcontext()
 
-with content_container:
+# Apply the visual card styling to the actual Streamlit container instead of a
+# standalone raw HTML block that does not wrap subsequent widgets.
+with card_container:
     st.title("Hello World")
 
     if st.button("Click me"):

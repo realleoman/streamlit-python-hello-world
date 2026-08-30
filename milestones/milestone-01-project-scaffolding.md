@@ -1,7 +1,7 @@
 ## Milestone: Project scaffolding and local app bootstrap
 
 > **Validates:** `python -m pip install -r requirements.txt` completes without dependency errors; `streamlit run app.py --server.headless true --server.port 8501` starts the app successfully; `curl -I http://localhost:8501/` returns `200 OK`; the rendered page includes the title `Hello World` and the button `Click me`.
-> **Validated in a clean venv:** the dependency markers above allow the project to install on 3.9.x and newer Python versions without pinning a single incompatible release.
+> **Validated in a clean venv:** the dependency markers above allow the project to install on 3.9.x and newer Python versions without pinning a single incompatible release, and the app was verified locally with the expected Streamlit startup and Hello World interaction flow.
 > **Reference files:** `requirements.txt`, `app.py`
 
 - [x] Create the Python + Streamlit project manifest in `requirements.txt` with the `streamlit` dependency and a minimal setup that can be installed in a clean virtual environment.
